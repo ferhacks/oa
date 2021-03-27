@@ -3,6 +3,8 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
 	let isClose = { // Switch Case Like :v
 		'1': Presence.unavailable,
 		'0': Presence.available,
+        '3': Presence.composing,
+        '4': Presence.recording
 	}[(args[0] || '')]
 	if (isClose === undefined)
 		throw `
