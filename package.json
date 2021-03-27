@@ -1,7 +1,7 @@
 {
-  "name": "wabot-aq",
+  "name": "aiden-bot",
   "version": "1.6.0",
-  "description": "Customizable WhatsApp Bot",
+  "description": "The Nice Bot",
   "depecrated": false,
   "main": "index.js",
   "directories": {

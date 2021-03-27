@@ -298,9 +298,9 @@ module.exports = {
     let chat = global.DATABASE._data.chats[m.key.remoteJid]
     if (chat.delete) return
     await this.reply(m.key.remoteJid, `
-Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
+ @${m.participant.split`@`[0]} Ha borrado un mensaje
 
-Untuk mematikan fitur ini, ketik
+Para desactivar esto, Usa
 *.enable delete*
 `.trim(), m.message, {
       contextInfo: {
@@ -313,15 +313,15 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-    group: 'Perintah ini hanya dapat digunakan di grup!',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-    admin: 'Perintah ini hanya untuk *Admin* grup!',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*'
+    rowner: 'Este comando solo puede ser utilizado por _*OWWNER!1!1!*_',
+    owner: 'Este comando solo puede ser utilizado por _*Owner Bot*_!',
+    mods: 'Este comando solo puede ser utilizado por _*Moderadores*_ !',
+    premium: 'Este comando solo puede ser utilizado por _*Persomas Premium*_ !',
+    group: 'Este comando solo puede ser utilizado en grupos',
+    private: 'Este comando solo puede ser utilizado en el chat privado',
+    admin: 'Este comando solo puede ser utilizado por _*Administradores_* !',
+    botAdmin: 'El bot nesecita ser admin',
+    unreg: 'Nesecitas registrarte, Usa:\n\n*#daftar nombre.edad*\n\nEjemplo: *#daftar Aiden.16*'
   }[type]
   if (msg) return m.reply(msg)
 }
