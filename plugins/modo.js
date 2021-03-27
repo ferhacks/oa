@@ -1,8 +1,8 @@
 let { Presence, GroupSettingChange } = require('@adiwajshing/baileys')
 let handler  = async (m, { conn, args, usedPrefix, command }) => {
 	let isClose = { // Switch Case Like :v
-		'1': unavailable,
-		'0': available,
+		'1': Presence.unavailable,
+		'0': Presence.available,
 	}[(args[0] || '')]
 	if (isClose === undefined)
 		throw `
