@@ -96,7 +96,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 *║┊:* https://www.youtube.com/channel/UCJbS-F7XER8DnGecXjWJJcg
 *║┊:* 𝑇ℎ𝑎𝑛𝑘𝑠 𝑡𝑜 
 *║┊:* Simp support admins
-*╰═┅ৡৢ͜͡✦═══╡𝗦𝗮𝗺𝘂𝟯𝟯𝟬╞═══┅ৡৢ͜͡✦═╯*
+*╰═┅ৡৢ͜͡✦═══╡AIDEN╞═══┅ৡৢ͜͡✦═╯*
 %readmore
 *╭═┅〘🛑 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 🛑〙*
 *▌║✙*❌𝑷𝒓𝒐𝒉𝒊𝒃𝒊𝒅𝒐 𝒍𝒍𝒂𝒎𝒂𝒓 𝒂𝒍 𝒃𝒐𝒕📲
