@@ -14,8 +14,15 @@ let handler  = async (m, { conn, args, usedPrefix, command ,text}) => {
     let erest = pint[Math.floor(Math.random() * pint.length) + 1]
     console.log(erest)
     await conn.sendFile(m.chat, erest, 'attp.jpg', '', m, true)
-    .catch(() => {
-        conn.sendMessage(m.chat, 'No se ha recibido ninguna imagen o el servidor está desconectado, inténtalo más tarde.', MessageType.extendedText, {quoted: m})
+    .catch(async() => {
+        let { Presence } = require('@adiwajshing/baileys')
+        const { text } = require('express')
+        let fetch = require('node-fetch')
+        const linp2 = await fetch(`http://api.fdci.se/rep.php?gambar=${text}`)
+        const pint2 = await linp2.json()
+        let erest2 = pint2[Math.floor(Math.random() * pint.length) + 1]
+        console.log(erest2)
+        await conn.sendFile(m.chat, erest2, 'attp.jpg', '', m, true)
     })
 }
 handler.help = ['simi','s'].map(v => v + ' *text*')
