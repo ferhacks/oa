@@ -12,7 +12,7 @@ await conn.updatePresence(m.chat, isClose)
 }
 handler.help = ['group *open / close*']
 handler.tags = ['group']
-handler.command = /^(group)$/i
+handler.command = /^(mood)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
