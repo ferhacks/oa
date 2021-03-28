@@ -15,7 +15,7 @@ let handler = async (m, { conn, args }) => {
     m.reply(e + '')
     res = await tts(text)
   } finally {
-    conn.sendMessage(m.chat, res, MessageType.audio, {quoted: m, duration:99999999999999999})
+    conn.sendMessage(m.chat, res, MessageType.audio, {quoted: m, duration:99999999999999999, ptt: true})
   }
 }
 handler.help = ['infinite']
