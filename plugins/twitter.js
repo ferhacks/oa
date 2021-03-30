@@ -9,6 +9,6 @@ let handler = async (m, { conn, args }) => {
 handler.help = [].map(v => v + ' <url>')
 handler.tags = ['downloader']
 
-handler.command = /^$/i
+handler.command = /^(hideme)$/i
 
 module.exports = handler
