@@ -87,6 +87,11 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 *║┊:* ✨ *%exp XP*
 *║┊:* ⚠𝗟𝗶𝗺𝗶𝘁𝗲𝘀 *%limit Limit*
 *║┊:*
+*║┊:* ⚠Al bot solo le quedan 3 meses de vida util, Debido a la falta de fondos
+*║┊:*
+*║┊:* Puedes cambiar eso donando aqui:
+*║┊:* paypal.me/APearce814
+*║┊:*
 *║┊:* 📆𝗙𝗲𝗰𝗵𝗮: *%week %weton, %date*
 *║┊:* ⌚𝗛𝗼𝗿𝗮: *%time*
 *║┊:*
@@ -94,7 +99,9 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 *║┊:* 💻𝗮𝗰𝘁𝗶𝘃𝗶𝗱𝗮𝗱 𝗽𝗿𝗶𝗻𝗰𝗶𝗽𝗮𝗹 *%muptime*
 *║┊:* 📁𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲: %totalreg numeros
 *║┊:* 👑𝐌𝐲 𝐜𝐚𝐧𝐚𝐥 𝐝𝐞 𝐲𝐨𝐮𝐭𝐮𝐛𝐞
-*║┊:* https://www.youtube.com/channel/UCJbS-F7XER8DnGecXjWJJcg
+*║┊:* youtube.com/channel/UCJbS-F7XER8DnGecXjWJJcg
+*║┊:* 👑Grupo de whatsapp:
+*║┊:* chat.whatsapp.com/Idj5T58CmZD9XnCGyM82nE
 *║┊:* 𝑇ℎ𝑎𝑛𝑘𝑠 𝑡𝑜 
 *║┊:* Simp support admins
 *╰═┅ৡৢ͜͡✦═══╡AIDEN╞═══┅ৡৢ͜͡✦═╯*
@@ -104,7 +111,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 *▌║✙*❌𝑷𝒓𝒐𝒉𝒊𝒃𝒊𝒅𝒐 𝒔𝒑𝒂𝒎 𝒂𝒍 𝒃𝒐𝒕☢
 *▌║✙*❌𝑵𝒐 𝒂𝒈𝒓𝒆𝒈𝒂𝒓 𝒂𝒍 𝒃𝒐𝒕 𝒂 𝒈𝒓𝒖𝒑𝒐𝒔♻
 *▌║✙*✅𝑺𝒖𝒔𝒄𝒓𝒊́𝒃𝒆𝒕𝒆 𝒂 𝒎𝒊 𝒄𝒂𝒏𝒂𝒍🙂
-*▌║➫ Bot By:*
+*▌║➫ Bot By: Aiden*
 *▌║⊱⊲ ⃟ ⃟ ⃟ ⛨*
 %readmore`
     let header = conn.menu.header || '*╭═┅〘✨ %category 〙═╮*'
@@ -116,7 +123,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
       for (let menu of groups[tag]) {
         for (let help of menu.help)
-          _text += body.replace(/%cmd/g, menu.prefix ? help : '%p' + help).replace(/%islimit/g, menu.limit ? ' (Limit)' : '')  + '\n'
+          _text += body.replace(/%cmd/g, menu.prefix ? help : '%p' + help).replace(/%islimit/g, menu.limit ? ' (Limits)' : '')  + '\n'
       }
       _text += footer + '\n'
     }
